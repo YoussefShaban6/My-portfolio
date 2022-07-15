@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Eurostile", sans-serif;
+
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-left: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141c3a;
+}
+
+.subtitle {
+  font-family: "europa", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.black-txt {
+  color: #343a40;
+}
+
+.green-txt {
+  color: #6741d9;
+}
+
+.white-txt {
+  color: #fff;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  padding-top: 6.9rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  row-gap: 10rem;
+}
+
+/* Text */
+.hero--nav {
+  font-size: 9.6rem;
+}
+
+.hero {
+  width: 65%;
+}
+
+.hide--txt-block {
+  display: none;
+}
+
+.hero-txt {
+  font-family: sans-serif;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.label-hello::after {
+  content: "Hello,";
+}
+
+.label-iam::after {
+  content: "I am";
+}
+
+.label-yosif::after {
+  content: "Youssef";
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero--img-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-img {
+  width: 90%;
+  display: block;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;
+}
+
+.dev--img {
+  display: block;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+/* About Section */
+
+.about-section {
+  margin-top: -5px;
+  width: 100%;
+  background: #6741d9;
+  padding: 12.75rem 0;
+}
+
+.about--col {
+  width: 60%;
+  padding: 0 16.75rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about--content {
+  margin-bottom: 9.6rem;
+  text-align: center;
+  line-height: 3;
+}
+
+.about-header {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Skills Section */
+.skills {
+  margin-top: -9.6rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 5px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  color: #000;
+}
+
+.skill {
+  width: 100%;
+  padding: 9.6rem 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.front--end {
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.image {
+  margin-bottom: 2.4rem;
+}
+
+.image img {
+  width: 6.4rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin: 2.4rem 0;
+}
+
+p,
+li {
+  font-family: "europaEuropaNuova-Bold", sans-serif;
+  color: #555;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.txt-primary {
+  margin-top: 4.8rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #6741d9;
+}
+
+li {
+  color: #555;
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+}
+
+/* My Works Section */
+.work--content {
+  padding-top: 9.6rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.work--header {
+  font-size: 3.6rem;
+  font-weight: 1000;
+  color: #000;
+}
+
+.work--txt {
+  font-size: 2rem;
+  color: #000;
+}
+
+section.my-works-section {
+  max-width: 75%;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 12.75rem 0;
+  justify-items: center;
+}
+
+.work {
+  width: 45rem;
+  height: 30rem;
+  padding: 1.2rem;
+  position: relative;
+}
+
+.work-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+}
+
+.work-img:hover {
+  opacity: 0.5;
+}
+
+.hidden::after {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.preview {
+  position: absolute; 
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+
+}
+
+.preview--img {
+  display: inline-block;
+  margin: 0 .5rem;
+  opacity: .6;
+}
