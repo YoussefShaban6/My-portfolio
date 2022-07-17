@@ -45,10 +45,17 @@ body {
 .white-txt {
   color: #fff;
 }
+
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+.full-container {
+  width: 100%;
+  background: #6741d9;
+  padding: 12.75rem 0;
 }
 
 /* Hero Section */
@@ -79,16 +86,8 @@ body {
   line-height: 1.3;
 }
 
-.label-hello::after {
-  content: "Hello,";
-}
-
-.label-iam::after {
-  content: "I am";
-}
-
-.label-yosif::after {
-  content: "Youssef";
+a div {
+  transition: all 0.5s;
 }
 
 a {
@@ -106,8 +105,8 @@ a {
 .hero-img {
   width: 90%;
   display: block;
-  border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;
 }
 
@@ -120,15 +119,12 @@ a {
 /* About Section */
 
 .about-section {
-  margin-top: -5px;
-  width: 100%;
-  background: #6741d9;
-  padding: 12.75rem 0;
+  margin-top: -4px;
 }
 
 .about--col {
-  width: 60%;
   padding: 0 16.75rem;
+  width: 60%;
 }
 
 .about {
@@ -229,6 +225,11 @@ li {
   color: #000;
 }
 
+.work--txt a {
+  text-decoration: none;
+  color: blue;
+}
+
 section.my-works-section {
   max-width: 75%;
 }
@@ -259,20 +260,52 @@ section.my-works-section {
   opacity: 0.5;
 }
 
-.hidden::after {
+/* .hidden::after {
   background-color: rgba(0, 0, 0, 0.08);
-}
+} */
 
 .preview {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-
 }
 
 .preview--img {
   display: inline-block;
-  margin: 0 .5rem;
-  opacity: .6;
+  margin: 0 0.5rem;
+  opacity: 0.6;
+}
+
+/* FOOTER SECTION */
+.footer {
+  max-width: 120rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content img {
+  width: 20rem;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;
+}
+
+.footer h4 {
+  margin: 3.6rem 0;
+  font-size: 2.8rem;
+  font-weight: 200;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.social-icon {
+  font-size: 3.6rem;
+  color: #fff;
+  margin: 0 1.2rem;
+  opacity: 0.5;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
 }

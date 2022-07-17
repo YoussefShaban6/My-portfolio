@@ -10,6 +10,9 @@
   <link href="http://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
   <link href="http://fonts.cdnfonts.com/css/europanuova" rel="stylesheet">
 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -20,21 +23,18 @@
       <div class="hero-txt">
         <h1 class="hero--nav">
           <div>
-            <a href="#About">
-              <div class="black-txt label-hello"></div>
-              <div class="hide--txt-block black-txt">About</div>
+            <a href="#about">
+              <div class="black-txt label label-hello">Hello,</div>
             </a>
           </div>
           <div>
-            <a href="#Works">
-              <div class="green-txt label-iam"></div>
-              <div class="hide--txt-block green-txt">Works</div>
+            <a href="#works">
+              <div class="green-txt label label-iam">I am</div>
             </a>
           </div>
           <div>
-            <a href="#Contact">
-              <div class="green-txt label-yosif"></div>
-              <div class="hide--txt-block green-txt">Contact</div>
+            <a href="#contacts">
+              <div class="green-txt label label-yosif">Youssef</div>
             </a>
           </div>
         </h1>
@@ -48,13 +48,14 @@
     </div>
   </section>
 
-  <section class="about-section" id="About">
+  <section class="full-container about-section" id="about">
     <div class="about">
       <div class="about--content about--col">
         <h2 class="about-header white-txt">Hi, I'm Youssef. Nice to meet you.</h2>
         <p class="about-txt white-txt subtitle">Since beginning my journey as a computer science student nearly 2 years
           ago, I've
-          learned a lot of programming cores and started learning the web. I solved many problems on the competitive
+          learned a lot of programming cores and started learning the web (MERN Stack). I 've solved many problems on
+          the competitive
           websites with my first langauge
           C++.</p>
       </div>
@@ -108,64 +109,47 @@
     </div>
   </section>
 
-  <section class="container my-works-section">
+  <section id="works" class="container my-works-section">
     <div class="my-works">
       <div class="work--content">
-        <h3 class="work--header">My Recent Works</h3>
+        <h3 class="work--header">My Recent Projects</h3>
         <div class="work--txt">
           <span>Here a few design projects I've worked on recenty. Want to see more?</span>
           <a href="#Email" class="mail">Email me</a>
         </div>
       </div>
       <div class="work-grid">
-        <div class="work">
-          <img src="imgs/projects/omnifood.png" alt="Porject Image" class="work-img" />
-          <div class="preview">
-            <a href="https://github.com/Youssef1S/Kalbonyan_Elmarsos/tree/main/Udemy/11-HTML%26CSS/07-Omnifood-project"
-              class="preview-link"><img src="imgs/logos/github.png" alt="" class="preview--img"></a>
-            <a href="https://omnifood101.netlify.app/" class="preview-link"><img src="imgs/logos/view.png" alt=""
-                class="preview--img"></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="imgs/projects/pig-game.png" alt="Porject Image" class="work-img hidden" />
-          <div class="preview">
-            <a href="https://github.com/Youssef1S/Kalbonyan_Elmarsos/tree/main/Udemy/12-JavaScript/05-DOM-and-Events-fundamentals/03-Pig-Game"
-              class="preview-link"><img src="imgs/logos/github.png" alt="" class="preview--img"></a>
-            <a href="https://piggame101.netlify.app/" class="preview-link"><img src="imgs/logos/view.png" alt=""
-                class="preview--img"></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="imgs/projects/bankist.png" alt="Porject Image" class="work-img hidden" />
-          <div class="preview">
-            <a href="https://github.com/Youssef1S/Kalbonyan_Elmarsos/tree/main/Udemy/12-JavaScript/09-Working-with-Arrays/Bankist-app"
-              class="preview-link"><img src="imgs/logos/github.png" alt="" class="preview--img"></a>
-            <a href="https://bankistapp101.netlify.app/" class="preview-link"><img src="imgs/logos/view.png" alt=""
-                class="preview--img"></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="imgs/projects/bankist-website.png" alt="Porject Image" class="work-img" />
-          <div class="preview">
-            <a href="https://github.com/Youssef1S/Kalbonyan_Elmarsos/tree/main/Udemy/12-JavaScript/11-Advanced-DOM-and-Events/Bankist-website"
-              class="preview-link"><img src="imgs/logos/github.png" alt="" class="preview--img"></a>
-            <a href="https://bankist-website101.netlify.app/" class="preview-link"><img src="imgs/logos/view.png" alt=""
-                class="preview--img"></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="imgs/projects/mapty.png" alt="Porject Image" class="work-img" />
-          <div class="preview">
-            <a href="https://github.com/Youssef1S/Kalbonyan_Elmarsos/tree/main/Udemy/12-JavaScript/13-Mapty-App"
-              class="preview-link"><img src="imgs/logos/github.png" alt="" class="preview--img"></a>
-            <a href="https://maptyapp101.netlify.app/" class="preview-link"><img src="imgs/logos/view.png" alt=""
-                class="preview--img"></a>
-          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="full-container footer-section">
+    <div class="footer">
+      <div class="footer-content">
+        <a href="#Top"><img src="imgs/hero.png" alt="" class="isCentered"></a>
+        <h4>Living, learning & leveling up</h4>
+        <div class="social" id="contacts">
+          <a href="https://www.facebook.com/youssef.shaban.31392/">
+            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://github.com/Youssef1S">
+            <ion-icon class="social-icon" name="logo-github"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/youssef-shaaban-a3190921a/">
+            <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://wa.me/+201024275973">
+            <ion-icon class="social-icon" name="logo-whatsapp"></ion-icon>
+          </a>
+          <a href=""></a>
         </div>
       </div>
     </div>
   </section>
+
+  <script type="module" src="./script/script.js"></script>
 </body>
+
+
 
 </html>
