@@ -242,7 +242,7 @@ section.my-works-section {
 }
 
 .work {
-  width: 45rem;
+  width: 100%;
   height: 30rem;
   padding: 1.2rem;
   position: relative;
