@@ -1,0 +1,78 @@
+@media (max-width: 414px) {
+  .hero--nav {
+    text-align: center;
+    font-size: 6.8rem;
+  }
+
+  .hero {
+    grid-row: 2/3;
+  }
+  .hero-section {
+    padding: 6.8rem 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 3.6rem;
+  }
+
+  .hero--img-box {
+    padding: 4.8rem 0 0;
+  }
+
+  .hero-logo {
+    width: 90%;
+  }
+
+  .about {
+    height: 24rem;
+  }
+
+  .about--content {
+    margin-bottom: 0;
+    line-height: 1.6;
+    padding: 0;
+    width: 90%;
+  }
+
+  .about-header {
+    font-size: 2.6rem;
+  }
+
+  .about-txt {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .container {
+    padding: 0 2.4rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .skill {
+    padding: 3.6rem 1.2rem;
+  }
+
+  .front--end {
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  section.my-works-section {
+    max-width: 90%;
+  }
+
+  .work-grid {
+    padding: 9.6rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  .work {
+    height: 20rem;
+  }
+
+  .footer {
+    width: 90%;
+  }
+}
