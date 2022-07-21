@@ -1,14 +1,69 @@
-@media (max-width: 414px) {
+@media (max-width: 84em) {
+  .about--col {
+    padding: 0 0;
+  }
+
+  section.my-works-section {
+    max-width: 80%;
+  }
+
+  .work {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work {
+    height: 34rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 45em) {
+  html {
+    font-size: 35%;
+  }
+
+  .hero-logo {
+    width: 70%;
+  }
+}
+
+@media (max-width: 34em) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work {
+    width: 90%;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 27em) {
   .hero--nav {
-    text-align: center;
-    font-size: 6.8rem;
+    margin-left: 6.4rem;
+    font-size: 9.6rem;
   }
 
   .hero {
     grid-row: 2/3;
   }
+
   .hero-section {
-    padding: 6.8rem 0;
     grid-template-columns: 1fr;
     justify-items: center;
     row-gap: 3.6rem;
@@ -18,8 +73,8 @@
     padding: 4.8rem 0 0;
   }
 
-  .hero-logo {
-    width: 90%;
+  .hero-img {
+    width: 60%;
   }
 
   .about {
@@ -42,8 +97,8 @@
     line-height: 1.6;
   }
 
-  .container {
-    padding: 0 2.4rem;
+  .skills-section {
+    padding: 0 4.8rem;
   }
 
   .content {
@@ -69,7 +124,7 @@
   }
 
   .work {
-    height: 20rem;
+    height: 34rem;
   }
 
   .footer {
