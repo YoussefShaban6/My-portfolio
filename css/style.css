@@ -58,6 +58,22 @@ body {
   padding: 12.75rem 0;
 }
 
+/* ANIMATION */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 /* Hero Section */
 .hero-section {
   padding-top: 6.9rem;
@@ -74,6 +90,19 @@ body {
 
 .hero {
   width: 65%;
+}
+
+.label {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+}
+
+.label-iam {
+  animation-delay: 0.2s;
+}
+
+.label-yosif {
+  animation-delay: 0.5s;
 }
 
 .hide--txt-block {
@@ -209,7 +238,7 @@ li {
 
 /* My Works Section */
 .work--content {
-  padding-top: 9.6rem;
+  padding-top: 12.75rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -237,21 +266,21 @@ section.my-works-section {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 12.75rem 0;
+  padding: 9.6rem 0;
   justify-items: center;
 }
 
 .work {
   width: 100%;
-  height: 95%;
+  height: 34rem;
   padding: 1.2rem;
-  position: relative;
 }
 
 .work--img-container {
   width: 100%;
   height: 100%;
   border-radius: 2rem;
+  position: relative;
   border: 2px solid rgba(0, 0, 0, 0.09);
   overflow: hidden;
 }
@@ -262,26 +291,64 @@ section.my-works-section {
   transition: all 0.5s;
 }
 
-.hidden {
-  display: none;
+.work-img--scale {
+  overflow: hidden;
+  transform: scale(1.2, 1.2);
 }
 
-.preview {
+.preview.hidden {
+  opacity: 0;
+}
+
+div.preview {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background-color: #141c3a;
   position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transition: 0.45s ease-in-out;
+  /* transform: translate(50%, -50%);  */
+  /* animation-name: zoomIn;
+   */
+}
+
+.preview--txt{
+  margin-bottom: 4.8rem;
+  font-size: 3.6rem;
+  color: #fff;
+
+}
+
+.preview--view{
+  display: flex;
+}
+
+
+.preview-link {
+  text-align: center;
+  display: block;
 }
 
 .preview--img {
   display: inline-block;
-  margin: 0 0.5rem;
-  opacity: 0.5;
+  width: 4.8rem;
+  margin: 0 1rem;
+  padding: 1rem;
+
+  border: 2px solid #6e07f3;
+  border-radius: 50%;
   transition: all 0.5s;
+  /* opacity: 0.5; */
 }
 
 .preview--img:hover {
-  opacity: 0.7;
+  background-color: #6e07f3;
 }
 
 /* FOOTER SECTION */
