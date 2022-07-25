@@ -53,7 +53,7 @@ const myWorks = [
     src: "./imgs/projects/foodapp.png",
     srcCode:
       "https://github.com/Youssef1S/Kalbonyan_Elmarsos/tree/main/Udemy/13-React-Js/https://github.com/Youssef1S/Kalbonyan_Elmarsos/tree/main/Udemy/13-React-Js/09-Food-Order-app",
-    live: "https://goal-app101.netlify.app/",
+    live: "https://foodapp101.netlify.app/",
   },
 ];
 
