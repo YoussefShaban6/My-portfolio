@@ -109,6 +109,10 @@ body {
 
 /* Text */
 
+.mobile{
+  display: none;
+}
+
 .hero--nav {
   font-size: 12vmin;
 }

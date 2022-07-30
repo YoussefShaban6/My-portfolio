@@ -49,6 +49,9 @@
     display: none;
   }
 
+  .mobile{
+    display: block;
+  }
   .work {
     height: 57rem;
   }
