@@ -6,7 +6,6 @@
   section.my-works-section {
     max-width: 80%;
   }
-
 }
 
 @media (max-width: 75em) {
@@ -14,21 +13,44 @@
     font-size: 56.25%;
   }
 
+  .hero--nav {
+    font-size: 10vmin;
+  }
+
+  .work {
+    height: 30rem;
+  }
+
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (max-width: 59em) {
   html {
     font-size: 50%;
   }
+
+  .work {
+    height: 48rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 45em) {
   html {
     font-size: 35%;
+  }
+
+  .web {
+    display: none;
+  }
+
+  .work {
+    height: 57rem;
   }
 
   .hero-logo {
@@ -42,14 +64,15 @@
   }
 
   .work {
-    width: 90%;
+    height: 45rem;
   }
 }
 
 @media (max-width: 27em) {
   .hero--nav {
-    margin-left: 6.4rem;
+    text-align: center;
     font-size: 9.6rem;
+    /* display: none; */
   }
 
   .hero {
@@ -62,8 +85,8 @@
     row-gap: 3.6rem;
   }
 
-  .hero--img-box {
-    padding: 4.8rem 0 0;
+  .label-hide {
+    display: none;
   }
 
   .hero-img {
@@ -113,7 +136,6 @@
 
   .work-grid {
     padding: 9.6rem 0;
-    grid-template-columns: 1fr;
   }
 
   .footer {

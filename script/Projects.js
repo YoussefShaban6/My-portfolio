@@ -35,6 +35,13 @@ const myWorks = [
     live: "https://maptyapp101.netlify.app/",
   },
   {
+    name: "Forkify App",
+    src: "./imgs/projects/forkify.png",
+    srcCode:
+      "https://github.com/Youssef1S/Kalbonyan_Elmarsos/tree/main/Udemy/12-JavaScript/15-Forkify-app",
+    live: "https://forkify-app101.netlify.app/",
+  },
+  {
     name: "Expenses Manager",
     src: "./imgs/projects/Expenses-manager.png",
     srcCode:

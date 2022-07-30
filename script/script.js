@@ -1,7 +1,11 @@
 import myWorks from "./Projects.js";
 
-const navLabel = document.querySelectorAll(".label");
+const webViewer = document.querySelectorAll(".web-view");
 const worksContainer = document.querySelector(".work-grid");
+const heroSection = document.querySelector(".hero-section");
+const contentLabel = document.querySelectorAll(".lbl");
+const labelLinks = document.querySelectorAll(".lbl--link");
+
 // Nav Bar
 const labels = [
   { name: "Hello,", link: "About" },
@@ -9,7 +13,7 @@ const labels = [
   { name: "Youssef", link: "Contacts" },
 ];
 
-navLabel.forEach((nav, index) => {
+webViewer.forEach((nav, index) => {
   nav.addEventListener("mouseover", () => {
     nav.style.marginLeft = "2.4rem";
     nav.textContent = `${labels[index].link}`;
@@ -18,6 +22,22 @@ navLabel.forEach((nav, index) => {
     nav.style.marginLeft = "0";
     nav.textContent = `${labels[index].name}`;
   });
+});
+
+let isClicked = false;
+
+heroSection.addEventListener("click", () => {
+  console.log(labelLinks);
+  labelLinks.forEach((nav, index) => {
+    if (isClicked) {
+      labelLinks[index].classList.remove("label-hide");
+      contentLabel[index].classList.add("label-hide");
+    } else {
+      labelLinks[index].classList.add("label-hide");
+      contentLabel[index].classList.remove("label-hide");
+    }
+  });
+  isClicked = !isClicked;
 });
 
 // Works
