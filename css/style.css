@@ -115,6 +115,7 @@ body {
 
 .hero--nav {
   font-size: 12vmin;
+  font-weight: 500;
 }
 
 .web-view {
@@ -151,7 +152,7 @@ body {
 }
 
 .hero {
-  font-family: sans-serif;
+  font-family: "Zacbel X", sans-serif;
   text-align: left;
   line-height: 1.3;
 }
