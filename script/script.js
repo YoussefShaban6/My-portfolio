@@ -40,9 +40,6 @@ heroSection.addEventListener("click", () => {
   isClicked = !isClicked;
 });
 
-// Smooth Scrolling
-const section = document.querySelector("html");
-section.scrollIntoView({ behavior: "smooth" });
 
 // Works
 worksContainer.innerHTML = "";
