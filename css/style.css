@@ -290,7 +290,7 @@ li {
   border-radius: 2.4rem;
   border: 2px solid #6e07f3;
   color: #6741d9;
-  transition: all 
+  transition: all .5s;
 }
 
 .resume:hover {
