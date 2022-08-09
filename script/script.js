@@ -1,3 +1,4 @@
+"use-strict";
 import myWorks from "./Projects.js";
 
 const webViewer = document.querySelectorAll(".web-view");
@@ -59,42 +60,7 @@ myWorks.forEach((work, index) => {
   </div>`;
 });
 
-const tabs = document.querySelectorAll(".nav-tab");
 const works = document.querySelectorAll(".work");
-
-works.forEach((work) => {
-  work.classList.add("active--card");
-});
-
-const tabIsClicked = (e) => {
-  let activeTabs = document.querySelectorAll(".active");
-
-  activeTabs.forEach((tab) => {
-    tab.className = tab.className.replace("active", "");
-  });
-
-  e.target.className += " active";
-
-  works.forEach((work) => {
-    work.classList.remove("active--card");
-  });
-
-  if (e.target.href.split("#")[1] === "all") {
-    works.forEach((work) => {
-      work.classList.add("active--card");
-    });
-  } else {
-    const cards = document.getElementsByName(e.target.href.split("#")[1]);
-
-    cards.forEach((card) => {
-      card.classList.add("active--card");
-    });
-  }
-};
-
-tabs.forEach((tab) => {
-  tab.addEventListener("click", tabIsClicked);
-});
 
 const worksImg = document.querySelectorAll(".work-img");
 const previews = document.querySelectorAll(".preview");
@@ -109,5 +75,40 @@ works.forEach((work, index) => {
   work.addEventListener("mouseout", () => {
     previews[index].classList.add("hidden");
     worksImg[index].classList.remove("work-img--scale");
+  });
+});
+
+const tabs = document.querySelectorAll(".nav-tab");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("isclicked");
+    const filteredTab = document.querySelector(".active");
+    filteredTab.className = filteredTab.className.replace("active", "");
+
+    e.target.classList.add("active");
+
+    works.forEach((work) => {
+      work.style.display = "none";
+    });
+
+    const filter = () => {
+      if (e.target.href.split("#")[1] !== "all") {
+        const filteredCards = document.getElementsByName(
+          e.target.href.split("#")[1]
+        );
+
+        filteredCards.forEach((card, index) => {
+          card.style.display = "block";
+        });
+      } else {
+        works.forEach((card, index) => {
+          card.style.display = "block";
+        });
+      }
+    };
+
+    setTimeout(filter, 50);
   });
 });

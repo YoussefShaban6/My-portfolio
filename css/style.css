@@ -91,8 +91,8 @@ body {
 @keyframes fadeLeftRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   100% {
@@ -340,18 +340,20 @@ section.my-works-section {
 }
 
 .work--tabs ul {
-  font-weight: 600;
   margin-top: 4.8rem;
-  padding-bottom: 1.2rem;
-  font-size: 2rem;
   display: flex;
   gap: 3.6rem;
   justify-content: center;
 }
 
 .work--tabs a {
-  color: #555;
-  display: inline-block;
+  display: block;
+  font-size: 1.6rem;
+  background-color: #fff;
+  border: none;
+  color: #343a40;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .work--tabs .active {
@@ -361,18 +363,18 @@ section.my-works-section {
 
 .work--tabs .active::after {
   content: "";
+  display: block;
   width: 100%;
   height: 0.05rem;
   background-color: #6741d9;
   position: absolute;
   bottom: 0;
   left: 0;
+  animation: fadeLeftRight 0.5s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
-.work.active--card {
-  display: block;
-  animation: slightfadeInUp 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
-  transition: all 1s;
+.work.hidden {
+  display: none;
 }
 
 .work-grid {
@@ -386,7 +388,7 @@ section.my-works-section {
   width: 100%;
   height: 34rem;
   padding: 1.2rem;
-  display: none;
+  animation: slightfadeInUp 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
 .work--img-container {
