@@ -74,6 +74,20 @@ body {
   }
 }
 
+@keyframes slightfadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeLeftRight {
   0% {
     opacity: 0;
@@ -290,7 +304,7 @@ li {
   border-radius: 2.4rem;
   border: 2px solid #6e07f3;
   color: #6741d9;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .resume:hover {
@@ -298,7 +312,7 @@ li {
   color: #fff;
 }
 
-/* My Works Section */
+/* ==================My Works Section==================*/
 .work--content {
   padding-top: 12.75rem;
   text-align: center;
@@ -325,10 +339,46 @@ section.my-works-section {
   max-width: 75%;
 }
 
+.work--tabs ul {
+  font-weight: 600;
+  margin-top: 4.8rem;
+  padding-bottom: 1.2rem;
+  font-size: 2rem;
+  display: flex;
+  gap: 3.6rem;
+  justify-content: center;
+}
+
+.work--tabs a {
+  color: #555;
+  display: inline-block;
+}
+
+.work--tabs .active {
+  color: #6741d9;
+  position: relative;
+}
+
+.work--tabs .active::after {
+  content: "";
+  width: 100%;
+  height: 0.05rem;
+  background-color: #6741d9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.work.active--card {
+  display: block;
+  animation: slightfadeInUp 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
+  transition: all 1s;
+}
+
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 9.6rem 0;
+  padding: 4.8rem;
   justify-items: center;
 }
 
@@ -336,6 +386,7 @@ section.my-works-section {
   width: 100%;
   height: 34rem;
   padding: 1.2rem;
+  display: none;
 }
 
 .work--img-container {
@@ -411,7 +462,7 @@ div.preview {
   background-color: #6e07f3;
 }
 
-/* FOOTER SECTION */
+/* ==================fOOTER SECTION================== */
 .full-container.footer-section {
   padding: 12.75rem 0 3.6rem;
 }

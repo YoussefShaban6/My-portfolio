@@ -6,7 +6,7 @@ const heroSection = document.querySelector(".hero-section");
 const contentLabel = document.querySelectorAll(".lbl");
 const labelLinks = document.querySelectorAll(".lbl--link");
 
-// Nav Bar
+/* ---------------------------Nav Bar--------------------------- */
 const labels = [
   { name: "Hello,", link: "About" },
   { name: "I am", link: "Works" },
@@ -40,28 +40,63 @@ heroSection.addEventListener("click", () => {
   isClicked = !isClicked;
 });
 
-
-// Works
+/* ---------------------------Works--------------------------- */
 worksContainer.innerHTML = "";
 
 myWorks.forEach((work, index) => {
   worksContainer.innerHTML += `
-  <div class="work">
+  <div class="work" name="${work.type}">
   <div class="work--img-container">
-  <img src="${myWorks[index].src}" alt="Porject Image" class="work-img">
+  <img src="${work.src}" alt="Porject Image" class="work-img">
   <div class="preview hidden">
-  <p class="preview--txt">${myWorks[index].name}</p>
+  <p class="preview--txt">${work.name}</p>
   <div class="preview--view">
-  <a href="${myWorks[index].srcCode}" class="preview-link"><img src="imgs/logos/github-brands.svg" alt="" class="preview--img"></a>
-  <a href="${myWorks[index].live}" class="preview-link"><img src="imgs/logos/eye-solid.svg" alt="" class="preview--img"></a>
+  <a href="${work.srcCode}" class="preview-link"><img src="imgs/logos/github-brands.svg" alt="" class="preview--img"></a>
+  <a href="${work.live}" class="preview-link"><img src="imgs/logos/eye-solid.svg" alt="" class="preview--img"></a>
   </div>
   </div>
   </div>
   </div>`;
 });
 
-const worksImg = document.querySelectorAll(".work-img");
+const tabs = document.querySelectorAll(".nav-tab");
 const works = document.querySelectorAll(".work");
+
+works.forEach((work) => {
+  work.classList.add("active--card");
+});
+
+const tabIsClicked = (e) => {
+  let activeTabs = document.querySelectorAll(".active");
+
+  activeTabs.forEach((tab) => {
+    tab.className = tab.className.replace("active", "");
+  });
+
+  e.target.className += " active";
+
+  works.forEach((work) => {
+    work.classList.remove("active--card");
+  });
+
+  if (e.target.href.split("#")[1] === "all") {
+    works.forEach((work) => {
+      work.classList.add("active--card");
+    });
+  } else {
+    const cards = document.getElementsByName(e.target.href.split("#")[1]);
+
+    cards.forEach((card) => {
+      card.classList.add("active--card");
+    });
+  }
+};
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", tabIsClicked);
+});
+
+const worksImg = document.querySelectorAll(".work-img");
 const previews = document.querySelectorAll(".preview");
 
 // console.log(previews)
@@ -70,10 +105,8 @@ works.forEach((work, index) => {
   work.addEventListener("mouseover", () => {
     worksImg[index].classList.add("work-img--scale");
     previews[index].classList.remove("hidden");
-    // previews[index].classList.add("animate__zoomIn");
   });
   work.addEventListener("mouseout", () => {
-    // previews[index].classList.remove("animate__zoomIn");
     previews[index].classList.add("hidden");
     worksImg[index].classList.remove("work-img--scale");
   });
