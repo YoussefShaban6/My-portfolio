@@ -24,6 +24,10 @@
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .certificates-section {
+    max-width: 95%;
+  }
 }
 
 @media (max-width: 59em) {
@@ -37,6 +41,14 @@
 
   .work-grid {
     grid-template-columns: 1fr;
+  }
+
+  .certificates-section {
+    max-width: 70%;
+  }
+
+  .education {
+    display: block;
   }
 }
 

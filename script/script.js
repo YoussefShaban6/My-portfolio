@@ -112,3 +112,46 @@ tabs.forEach((tab) => {
     setTimeout(filter, 50);
   });
 });
+
+/* ---------------------------Certificates--------------------------- */
+import Certificates from "./cetificates.js";
+
+const coursesContainer1 = document.querySelector(".edu--container1");
+const coursesContainer2 = document.querySelector(".edu--container2");
+
+const certificateHandler = (idx) => {
+  const coursesList = Certificates[idx].list;
+  let courseListEl = "";
+  for (const course of coursesList) {
+    courseListEl += `<li>${
+      course.link !== "#"
+        ? `<a href=${course.link}>${course.name} <span><ion-icon name="open-outline"></ion-icon></span></a>`
+        : `<span>${course.name}</span>`
+    } </li>`;
+  }
+
+  return `
+  <div class="courses--content">
+    <div class="certificate--icon"><img src=${Certificates[idx].src} /></div>
+    <div class="certificate--header">${Certificates[idx].name}</div>
+    <div class="finish--date">${Certificates[idx].date}</div>
+    <div class="courses--list"> 
+      <ul>
+        ${courseListEl}
+      </ul>
+    </div>
+  </div>
+  `;
+};
+
+const certificatesNum = Certificates.length;
+
+for (let idx = 0; idx < parseInt(certificatesNum / 2); idx++) {
+  let certificateEl = certificateHandler(idx);
+  coursesContainer1.innerHTML += certificateEl;
+}
+
+for (let idx = parseInt(certificatesNum / 2); idx <= certificatesNum; idx++) {
+  let certificateEl = certificateHandler(idx);
+  coursesContainer2.innerHTML += certificateEl;
+}
