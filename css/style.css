@@ -481,23 +481,24 @@ div.preview {
 /* ==================CERTIFICATES SECTION================== */
 .certificates-section {
   max-width: 70%;
-  margin-bottom: 12rem;
+  margin-bottom: 20.75rem;
 }
 
 .education {
   margin: 4.8rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .education > div {
   max-width: 95%;
+  border-left: 1px solid #6741d9;
 }
 
 .certificates--content {
-  padding-top: 12.75rem;
-  text-align: center;
+  padding-top: 9.6rem;
   color: #000;
+  text-align: center;
   line-height: 1.5;
 }
 
@@ -513,19 +514,16 @@ div.preview {
 }
 
 .edu--container1 {
-  border-left: 1px solid #6741d9;
   padding-top: 4.8rem;
 }
 
 .edu--container2 {
-  border-left: 1px solid #6741d9;
   padding-top: 4.8rem;
 }
 
 .courses--content {
   position: relative;
   padding: 2.4rem 4.8rem;
-  /* display: flex; */
   color: #444;
   line-height: 2;
 }
@@ -552,7 +550,7 @@ div.preview {
   font-family: sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
-  /* color: #6e07f3; */
+  color: #6e07f3;
 }
 
 .finish--date {
@@ -574,10 +572,60 @@ div.preview {
   color: #6741d9;
 }
 
+/* ==================Chatting SECTION================== */
+
+div.chatting--section {
+  width: 70%;
+  font-size: 2rem;
+  line-height: 2;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141c3a;
+  border-radius: 1rem;
+  padding: 4.8rem 2.4rem;
+  position: absolute;
+  top: -6.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.chatting--section div {
+  color: #fff;
+  width: 45%;
+}
+
+.chatting--p p {
+  color: #fff;
+}
+
+.chatting--section button {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.4rem 1.8rem;
+  background-color: #141c3a;
+  border-radius: 2.4rem;
+  border: 0.3rem solid #6741d9;
+  transition: all 0.5s;
+}
+
+.chatting--section button:hover {
+  background-color: #6741d9;
+  color: #000;
+}
+
+.chatting--icon {
+  font-size: 2rem;
+}
 
 /* ==================fOOTER SECTION================== */
 .full-container.footer-section {
   padding: 12.75rem 0 3.6rem;
+  position: relative;
 }
 
 .footer {
@@ -595,7 +643,7 @@ div.preview {
 
 .footer .footer-content img {
   opacity: 1;
-  width: 20rem;
+  width: 15%;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;

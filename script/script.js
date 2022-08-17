@@ -99,11 +99,11 @@ tabs.forEach((tab) => {
           e.target.href.split("#")[1]
         );
 
-        filteredCards.forEach((card, index) => {
+        filteredCards.forEach((card) => {
           card.style.display = "block";
         });
       } else {
-        works.forEach((card, index) => {
+        works.forEach((card) => {
           card.style.display = "block";
         });
       }
