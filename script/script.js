@@ -114,13 +114,14 @@ tabs.forEach((tab) => {
 });
 
 /* ---------------------------Certificates--------------------------- */
-import Certificates from "./cetificates.js";
+import { Certificates } from "./Certificates.js";
 
 const coursesContainer1 = document.querySelector(".edu--container1");
 const coursesContainer2 = document.querySelector(".edu--container2");
 
 const certificateHandler = (idx) => {
   const coursesList = Certificates[idx].list;
+
   let courseListEl = "";
   for (const course of coursesList) {
     courseListEl += `<li>${
@@ -135,7 +136,7 @@ const certificateHandler = (idx) => {
     <div class="certificate--icon"><img src=${Certificates[idx].src} /></div>
     <div class="certificate--header">${Certificates[idx].name}</div>
     <div class="finish--date">${Certificates[idx].date}</div>
-    <div class="courses--list"> 
+    <div class="courses--list">
       <ul>
         ${courseListEl}
       </ul>
@@ -151,7 +152,29 @@ for (let idx = 0; idx < parseInt(certificatesNum / 2); idx++) {
   coursesContainer1.innerHTML += certificateEl;
 }
 
-for (let idx = parseInt(certificatesNum / 2); idx <= certificatesNum; idx++) {
-  let certificateEl = certificateHandler(idx);
+for (let idx = parseInt(certificatesNum / 2); idx < certificatesNum; idx++) {
+  const certificateEl = certificateHandler(idx);
   coursesContainer2.innerHTML += certificateEl;
 }
+
+/* ---------------------------FROM--------------------------- */
+const closeBtn = document.querySelector(".close");
+const chatMe = document.querySelector(".chat-me");
+const backdrop = document.querySelector(".overlay");
+const form = document.querySelector(".form");
+
+const closeFrom = (e) => {
+  e.preventDefault();
+  form.classList.add("hidden-form");
+  backdrop.classList.add("hidden-form");
+};
+
+closeBtn.addEventListener("click", closeFrom);
+
+chatMe.addEventListener("click", (e) => {
+  e.preventDefault();
+  form.classList.remove("hidden-form");
+  backdrop.classList.remove("hidden-form");
+});
+
+backdrop.addEventListener("click", closeFrom);

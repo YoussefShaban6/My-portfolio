@@ -46,7 +46,6 @@ const Certificates = [
       },
     ],
   },
-
   {
     name: "MERN Stack",
     date: "July, 2022",
@@ -65,7 +64,6 @@ const Certificates = [
       },
     ],
   },
-
   {
     name: "Cloud Guru",
     date: "June, 2022",
@@ -81,7 +79,6 @@ const Certificates = [
       },
     ],
   },
-
   {
     name: "Academic Education",
     date: "October, 2020 - percent",
@@ -107,4 +104,4 @@ const Certificates = [
   },
 ];
 
-export default Certificates;
+export { Certificates };

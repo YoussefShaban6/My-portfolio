@@ -211,9 +211,9 @@
         <p>I'm always ready for any work or internship oportunities and excited to build a real world software</p>
       </div>
       <div>
-        <button><span>
+        <button class="chat-me"><span>
             <ion-icon name="chatbox-ellipses-outline" class="chatting--icon"></ion-icon>
-          </span>  Start a conversation</button>
+          </span> Start a conversation</button>
       </div>
     </div>
 
@@ -242,6 +242,39 @@
     </div>
   </section>
 
+  <div>
+    <div class="form hidden-form">
+      <div>
+        <button class="reload">
+          <ion-icon name="reload-outline"></ion-icon>
+        </button>
+        <button class="close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+      </div>
+      <div>
+        <label for="subject">subject</label>
+        <input type="text" id="subject" class="subject">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" data-gramm="false" ; data-gramm_editor="false" ;
+          data-enable-grammarly="false" ;></textarea>
+      </div>
+      <div class="txt-center">
+        <input type="submit">
+      </div>
+    </div>
+    <div class="overlay hidden-form"></div>
+  </div>
   <script type="module" src="./script/script.js"></script>
 </body>
 
