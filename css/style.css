@@ -637,8 +637,7 @@ div.chatting--section {
 .footer .footer-content h4,
 .footer .footer-content p,
 .footer-content .social-icon {
-  color: #fff;
-  opacity: 0.5;
+  color: #eee;
 }
 
 .footer .footer-content img {
@@ -663,10 +662,12 @@ div.chatting--section {
 .social-icon {
   font-size: 3.6rem;
   margin: 0 1.2rem;
+  opacity: 1;
+  transition: all .5s;
 }
 
 .social-icon:hover {
-  opacity: 0.7;
+  opacity: .8;
 }
 
 /* ==================FORM SECTION================== */
