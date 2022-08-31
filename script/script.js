@@ -28,7 +28,6 @@ webViewer.forEach((nav, index) => {
 let isClicked = false;
 
 heroSection.addEventListener("click", () => {
-  console.log(labelLinks);
   labelLinks.forEach((nav, index) => {
     if (isClicked) {
       labelLinks[index].classList.remove("label-hide");
@@ -157,24 +156,4 @@ for (let idx = parseInt(certificatesNum / 2); idx < certificatesNum; idx++) {
   coursesContainer2.innerHTML += certificateEl;
 }
 
-/* ---------------------------FROM--------------------------- */
-const closeBtn = document.querySelector(".close");
-const chatMe = document.querySelector(".chat-me");
-const backdrop = document.querySelector(".overlay");
-const form = document.querySelector(".form");
 
-const closeFrom = (e) => {
-  e.preventDefault();
-  form.classList.add("hidden-form");
-  backdrop.classList.add("hidden-form");
-};
-
-closeBtn.addEventListener("click", closeFrom);
-
-chatMe.addEventListener("click", (e) => {
-  e.preventDefault();
-  form.classList.remove("hidden-form");
-  backdrop.classList.remove("hidden-form");
-});
-
-backdrop.addEventListener("click", closeFrom);

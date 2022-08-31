@@ -61,6 +61,7 @@ const Certificates = [
       },
       {
         name: "React.js",
+        link: "https://www.udemy.com/certificate/UC-011174c9-ca88-4a33-9918-fc27d61ba379/",
       },
     ],
   },

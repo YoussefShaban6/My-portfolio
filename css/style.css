@@ -298,17 +298,17 @@ li {
 .resume {
   margin-top: 9.6rem;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  padding: 1.2rem 1.8rem;
-  border-radius: 2.4rem;
-  border: 2px solid #6e07f3;
+  padding: 1.4rem 1.8rem;
+  border-radius: 2.8rem;
+  border: 0.3rem solid #6741d9;
   color: #6741d9;
   transition: all 0.5s;
 }
 
 .resume:hover {
-  background-color: #6e07f3;
+  background-color: #6741d9;
   color: #fff;
 }
 
@@ -564,7 +564,7 @@ div.preview {
 
 .courses--list a {
   margin-left: 1rem;
-  color: #000;
+  color: #555;
   transition: all 0.5s;
 }
 
@@ -575,7 +575,7 @@ div.preview {
 /* ==================Chatting SECTION================== */
 
 div.chatting--section {
-  width: 70%;
+  width: 85%;
   font-size: 2rem;
   line-height: 2;
   text-align: center;
@@ -587,10 +587,11 @@ div.chatting--section {
   border-radius: 1rem;
   padding: 4.8rem 2.4rem;
   position: absolute;
-  top: -6.9rem;
+  top: -8.9rem;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+  gap: 1.2rem;
 }
 
 .chatting--section div {
@@ -624,7 +625,7 @@ div.chatting--section {
 
 /* ==================fOOTER SECTION================== */
 .full-container.footer-section {
-  padding: 12.75rem 0 3.6rem;
+  padding: 19.6rem 0 3.6rem;
   position: relative;
 }
 
@@ -637,15 +638,22 @@ div.chatting--section {
 .footer .footer-content h4,
 .footer .footer-content p,
 .footer-content .social-icon {
-  color: #eee;
+  color: #ddd;
 }
-
+.footer .footer-content {
+  margin-top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+}
 .footer .footer-content img {
   opacity: 1;
-  width: 15%;
+  width: 20rem;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer .footer-content a {
+  display: inline-block;
 }
 
 .footer h4 {
@@ -662,12 +670,11 @@ div.chatting--section {
 .social-icon {
   font-size: 3.6rem;
   margin: 0 1.2rem;
-  opacity: 1;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .social-icon:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /* ==================FORM SECTION================== */
@@ -689,22 +696,30 @@ div.chatting--section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: grid;
   background-color: #fff;
   padding: 4.8rem;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.05);
   transition: all 0.5s;
   z-index: 10;
 }
 
-.form div:nth-child(1) {
+.fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 2rem;
+}
+
+.fields-none {
+  display: none;
+}
+
+.form .fields div:nth-child(1) {
   text-align: right;
 }
 
-.form div:nth-child(1) button {
+.form .fields div:nth-child(1) button {
   background-color: #fff;
   border: none;
   color: #6741d9;
@@ -713,11 +728,12 @@ div.chatting--section {
   margin-left: 2.4rem;
 }
 
-.form div:nth-child(1) button:last-child {
+.form .fields div:nth-child(1) button:last-child {
   font-size: 2.5rem;
 }
 
 .form label {
+  position: relative;
   font-size: 2rem;
   color: #555;
   display: block;
@@ -742,10 +758,10 @@ textarea {
   resize: vertical;
 }
 
-.form div:last-child,
-.form div:nth-child(1),
-.form div:nth-child(4),
-.form div:nth-child(5) {
+.form .fields div:last-child,
+.form .fields div:nth-child(1),
+.form .fields div:nth-child(4),
+.form .fields div:nth-child(5) {
   grid-column: 1 / span 2;
 }
 
@@ -757,8 +773,9 @@ input {
   text-align: center;
 }
 
-.form div:last-child input {
-  width: 20%;
+.form .fields div:last-child input {
+  width: 30%;
+  height: auto;
   color: #6741d9;
   border-color: #6741d9;
   border-radius: 2.4rem;
@@ -766,7 +783,7 @@ input {
   transition: all 0.5s;
 }
 
-.form div:last-child input:hover {
+.form .fields div:last-child input:hover {
   background-color: #6741d9;
   color: #fff;
 }
@@ -778,4 +795,41 @@ button {
 .hidden-form {
   visibility: hidden;
   opacity: 0;
+}
+
+.succeed-message {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  color: #333;
+}
+
+.succeed-message img {
+  width: 12.4rem;
+}
+
+.succeed-message h2 {
+  font-size: 3.6rem;
+}
+
+.succeed-message p {
+  font-size: 2rem;
+}
+
+.succeed-message button {
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  padding: 1.4rem 3.2rem;
+  font-weight: 600;
+  color: #444;
+  border: 0.3rem solid #6741d9;
+  border-radius: 2.4rem;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.succeed-message button:hover {
+  background-color: #6741d9;
+  color: #fff;
 }

@@ -25,8 +25,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  
   .certificates-section {
     max-width: 95%;
+  }
+  
+  .form {
+    width: 70%;
   }
 }
 
@@ -50,11 +55,73 @@
   .education {
     display: block;
   }
+
+  .full-container.footer-section {
+    padding: 36rem 0 12.4rem;
+  }
+
+  div.chatting--section {
+    flex-direction: column;
+  }
+
+  div.chatting--section div {
+    width: 90%;
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .chatting--p p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .chatting--section button {
+    font-size: 2rem;
+  }
+
+  .chatting--icon {
+    font-size: 3rem;
+  }
+
+  .form {
+    width: 80%;
+  }
+
+  .form label {
+    font-size: 3rem;
+  }
+
+  .form div:last-child input {
+    font-size: 2.4rem;
+  }
+
+  .footer .footer-content {
+    gap: 2rem;
+  }
+  .footer .footer-content img {
+    width: 25rem;
+  }
+
+  .footer h4 {
+    font-size: 3.6rem;
+  }
+
+  .social-icon {
+    font-size: 4rem;
+  }
+
+  .footer .footer-content p {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 45em) {
   html {
     font-size: 35%;
+  }
+
+  li {
+    font-size: 2rem;
   }
 
   .work {
@@ -63,6 +130,47 @@
 
   .hero-logo {
     width: 70%;
+  }
+
+  .full-container.footer-section {
+    padding: 48rem 0 12.4rem;
+  }
+
+  div.chatting--section div {
+    width: 85%;
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .chatting--p p {
+    font-size: 2.4rem;
+  }
+
+  .chatting--section button {
+    font-size: 2.4rem;
+    padding: 2rem 2.8rem;
+  }
+
+
+  .form .fields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .footer-content img {
+    width: 30rem;
+  }
+
+  .footer h4 {
+    font-size: 4rem;
+  }
+
+  .social-icon {
+    font-size: 4.8rem;
+  }
+
+  .footer .footer-content p {
+    font-size: 2rem;
   }
 }
 
@@ -101,6 +209,10 @@
 
   .label-hide {
     display: none;
+  }
+
+  .form {
+    width: 95%;
   }
 }
 
