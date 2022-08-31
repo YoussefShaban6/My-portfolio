@@ -711,8 +711,8 @@ div.chatting--section {
   gap: 2rem;
 }
 
-.fields-none {
-  display: none;
+.form .fields-none {
+  display: none !important;
 }
 
 .form .fields div:nth-child(1) {
