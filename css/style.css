@@ -585,8 +585,8 @@ div.preview {
 }
 
 .quote {
+  width: 95%;
   animation: fadeLeftRight .5s;
-
 }
 
 .quote-hidden {
