@@ -576,12 +576,20 @@ div.preview {
   border-top: 0.2rem solid #f8f9fa;
   padding: 10rem 0 18rem;
   position: relative;
+  color: #000;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.quotes--content h3{
+  font-size: 3.6rem;
 }
 
 .quotes{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4.8rem;
 }
 
 .quote {
@@ -609,7 +617,6 @@ div.preview {
 }
 
 .dots {
-  margin-top: 4.8rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -617,13 +624,13 @@ div.preview {
 
 .dots .dot {
   font-size: 1.2rem;
-  color: #6741d9;
-  opacity: 0.5;
+  color: #ccc;
   cursor: pointer;
   transition: all .5s;
 }
 
 .dots .dot.active--dot {
+  color: #6741d9;
   opacity: 1;
 }
 
