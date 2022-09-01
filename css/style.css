@@ -102,6 +102,20 @@ body {
   }
 }
 
+@keyframes fadeRightLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 @keyframes circle {
   0% {
     transform: translateY(0);
@@ -326,7 +340,7 @@ li {
 }
 
 .work--txt {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .work--txt a {
@@ -462,20 +476,6 @@ div.preview {
 .preview--img:hover {
   background-color: #6741d9;
 }
-/* ==================CERTIFICATES SECTION================== */
-/* .collaboration-section {
-  background-color: #6741d9;
-}
-
-.collaboration {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.collaboration img {
-  width: 24rem;
-  height: 20rem;
-} */
 
 /* ==================CERTIFICATES SECTION================== */
 .certificates-section {
@@ -509,7 +509,7 @@ div.preview {
 }
 
 .certificates--content div {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .edu--container1 {
@@ -571,21 +571,21 @@ div.preview {
   color: #6741d9;
 }
 
-/*  */
+/* ==================Chatting SECTION================== */
 .quotes--section {
   border-top: 0.2rem solid #f8f9fa;
   padding: 10rem 0 18rem;
   position: relative;
   color: #000;
-  font-size: 2rem;
+  font-size: 2.2rem;
   line-height: 1.5;
 }
 
-.quotes--content h3{
+.quotes--content h3 {
   font-size: 3.6rem;
 }
 
-.quotes{
+.quotes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -593,8 +593,16 @@ div.preview {
 }
 
 .quote {
-  width: 95%;
-  animation: fadeLeftRight .5s;
+  width: 50%;
+
+}
+
+.quote-1 {
+  animation: fadeLeftRight 0.5s;
+}
+
+.quote-2 {
+  animation: fadeRightLeft 0.5s;
 }
 
 .quote-hidden {
@@ -626,7 +634,7 @@ div.preview {
   font-size: 1.2rem;
   color: #ccc;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .dots .dot.active--dot {
