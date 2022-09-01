@@ -594,7 +594,8 @@ div.preview {
 }
 
 .quote p {
-  line-height: 2.5;
+  margin-bottom: 3.6rem;
+  line-height: 1.5;
   color: #141c3a;
 }
 
