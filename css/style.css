@@ -91,8 +91,8 @@ body {
 @keyframes fadeLeftRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
   }
 
   100% {
@@ -385,7 +385,7 @@ section.my-works-section {
 
 .work {
   width: 100%;
-  height: 34rem;
+  height: 31em;
   padding: 1.2rem;
   animation: slightfadeInUp 1.2s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
@@ -463,9 +463,8 @@ div.preview {
   background-color: #6741d9;
 }
 /* ==================CERTIFICATES SECTION================== */
-.collaboration-section {
+/* .collaboration-section {
   background-color: #6741d9;
-  /* padding: 0.8rem; */
 }
 
 .collaboration {
@@ -476,7 +475,7 @@ div.preview {
 .collaboration img {
   width: 24rem;
   height: 20rem;
-}
+} */
 
 /* ==================CERTIFICATES SECTION================== */
 .certificates-section {
@@ -570,6 +569,61 @@ div.preview {
 
 .courses--list a:hover {
   color: #6741d9;
+}
+
+/*  */
+.quotes--section {
+  border-top: 0.2rem solid #f8f9fa;
+  padding: 10rem 0 18rem;
+  position: relative;
+}
+
+.quotes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  animation: fadeLeftRight .5s;
+
+}
+
+.quote-hidden {
+  display: none;
+}
+
+.quote p {
+  line-height: 2.5;
+  color: #141c3a;
+}
+
+.quote p:nth-child(1) {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.quote p:nth-child(2) {
+  font-size: 1.8rem;
+}
+
+.dots {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dots .dot {
+  font-size: 1.2rem;
+  color: #6741d9;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.dots .dot.active--dot {
+  opacity: 1;
 }
 
 /* ==================Chatting SECTION================== */
@@ -678,7 +732,6 @@ div.chatting--section {
 }
 
 /* ==================FORM SECTION================== */
-
 .overlay {
   position: fixed;
   top: 0;
@@ -693,9 +746,9 @@ div.chatting--section {
 .form {
   width: 45%;
   position: fixed;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
   background-color: #fff;
   padding: 4.8rem;
   border-radius: 1rem;
@@ -795,6 +848,7 @@ button {
 .hidden-form {
   visibility: hidden;
   opacity: 0;
+  bottom: -100%;
 }
 
 .succeed-message {

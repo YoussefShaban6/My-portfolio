@@ -156,4 +156,17 @@ for (let idx = parseInt(certificatesNum / 2); idx < certificatesNum; idx++) {
   coursesContainer2.innerHTML += certificateEl;
 }
 
+//
 
+const dots = document.querySelectorAll(".dot");
+const quotes = document.querySelectorAll(".quote");
+console.log(quotes);
+
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    dots.forEach((activeDot, index) => {
+      activeDot.classList.toggle("active--dot");
+      quotes[index].classList.toggle("quote-hidden");
+    });
+  });
+});
