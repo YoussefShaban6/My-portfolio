@@ -120,8 +120,8 @@
     font-size: 35%;
   }
 
-  li {
-    font-size: 2rem;
+  li, p {
+    font-size: 1.8rem;
   }
 
   .work {
@@ -134,6 +134,14 @@
 
   .full-container.footer-section {
     padding: 48rem 0 12.4rem;
+  }
+
+  .work--tabs a {
+    font-size: 1.9rem
+  }
+
+  .finish--date {
+    font-size: 1.8rem;
   }
 
   div.chatting--section div {
