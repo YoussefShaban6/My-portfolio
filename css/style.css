@@ -310,14 +310,14 @@ li {
 }
 
 .resume {
-  margin-top: 9.6rem;
+  margin-top: 6rem;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   padding: 1.4rem 1.8rem;
-  border-radius: 2.8rem;
-  border: 0.3rem solid #6741d9;
-  color: #6741d9;
+  border-radius:2rem;
+  border: 2px solid #6741d9;
+  color: #555;
   transition: all 0.5s;
 }
 
@@ -361,10 +361,10 @@ section.my-works-section {
 
 .work--tabs a {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background-color: #fff;
   border: none;
-  color: #343a40;
+  color: #555;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -480,18 +480,16 @@ div.preview {
 /* ==================CERTIFICATES SECTION================== */
 .certificates-section {
   max-width: 70%;
-  margin-bottom: 20.75rem;
 }
 
 .education {
-  margin: 4.8rem 0;
-  display: flex;
+  margin: 9.6rem 0;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
 }
 
 .education > div {
   max-width: 95%;
-  border-left: 1px solid #6741d9;
 }
 
 .certificates--content {
@@ -512,25 +510,30 @@ div.preview {
   font-size: 2.2rem;
 }
 
-.edu--container1 {
-  padding-top: 4.8rem;
-}
-
-.edu--container2 {
-  padding-top: 4.8rem;
-}
-
 .courses--content {
   position: relative;
-  padding: 2.4rem 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
   color: #444;
   line-height: 2;
 }
 
+.courses--content:nth-child(odd) .course {
+  padding-left: 12rem;
+  padding-bottom: 4rem;
+}
+
+.courses--content:nth-child(even) .course {
+  grid-area: 1/3;
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+ } 
+
+.certificate--icon-container {
+  grid-area: 1/2;
+}
+
 .certificate--icon {
-  position: absolute;
-  top: 2.5rem;
-  left: -1.8rem;
   display: inline-block;
   width: 3.6rem;
   height: 3.6rem;
@@ -539,6 +542,15 @@ div.preview {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.certificate--icon-container::after {
+  content: "";
+  margin: auto;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #6741d9;
 }
 
 .certificate--icon img {
@@ -594,7 +606,6 @@ div.preview {
 
 .quote {
   width: 50%;
-
 }
 
 .quote-1 {

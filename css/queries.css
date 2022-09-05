@@ -25,11 +25,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  
   .certificates-section {
     max-width: 95%;
   }
-  
+
   .form {
     width: 70%;
   }
@@ -50,6 +49,23 @@
 
   .certificates-section {
     max-width: 75%;
+  }
+
+  .courses--content {
+    grid-template-columns: max-content 1fr;
+  }
+
+  .certificate--icon-container {
+    grid-area: 1;
+  }
+
+  .courses--content:nth-child(odd) .course {
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .courses--content:nth-child(even) .course {
+    grid-area: 1/2;
   }
 
   .education {
@@ -120,7 +136,8 @@
     font-size: 35%;
   }
 
-  li, p {
+  li,
+  p {
     font-size: 1.8rem;
   }
 
@@ -137,7 +154,7 @@
   }
 
   .work--tabs a {
-    font-size: 1.9rem
+    font-size: 1.9rem;
   }
 
   .finish--date {
@@ -158,7 +175,6 @@
     font-size: 2.4rem;
     padding: 2rem 2.8rem;
   }
-
 
   .form .fields {
     display: flex;

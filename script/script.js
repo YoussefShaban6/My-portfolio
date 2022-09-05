@@ -115,8 +115,7 @@ tabs.forEach((tab) => {
 /* ---------------------------Certificates--------------------------- */
 import { Certificates } from "./Certificates.js";
 
-const coursesContainer1 = document.querySelector(".edu--container1");
-const coursesContainer2 = document.querySelector(".edu--container2");
+const coursesContainer = document.querySelector(".education");
 
 const certificateHandler = (idx) => {
   const coursesList = Certificates[idx].list;
@@ -132,13 +131,17 @@ const certificateHandler = (idx) => {
 
   return `
   <div class="courses--content">
-    <div class="certificate--icon"><img src=${Certificates[idx].src} /></div>
+  <div class="course">
     <div class="certificate--header">${Certificates[idx].name}</div>
-    <div class="finish--date">${Certificates[idx].date}</div>
-    <div class="courses--list">
-      <ul>
-        ${courseListEl}
-      </ul>
+      <div class="finish--date">${Certificates[idx].date}</div>
+        <div class="courses--list">
+          <ul>
+            ${courseListEl}
+          </ul>
+        </div>
+    </div>
+    <div class="certificate--icon-container txt-center">
+      <div class="certificate--icon"><img src=${Certificates[idx].src} /></div>
     </div>
   </div>
   `;
@@ -146,17 +149,12 @@ const certificateHandler = (idx) => {
 
 const certificatesNum = Certificates.length;
 
-for (let idx = 0; idx < parseInt(certificatesNum / 2); idx++) {
+for (let idx = 0; idx < certificatesNum; idx++) {
   let certificateEl = certificateHandler(idx);
-  coursesContainer1.innerHTML += certificateEl;
+  coursesContainer.innerHTML += certificateEl;
 }
 
-for (let idx = parseInt(certificatesNum / 2); idx < certificatesNum; idx++) {
-  const certificateEl = certificateHandler(idx);
-  coursesContainer2.innerHTML += certificateEl;
-}
-
-//
+// Quotes
 
 const dots = document.querySelectorAll(".dot");
 const quotes = document.querySelectorAll(".quote");
