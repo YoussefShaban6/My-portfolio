@@ -38,7 +38,7 @@ body {
   color: #343a40;
 }
 
-.green-txt {
+.burble-txt {
   color: #6741d9;
 }
 
@@ -204,7 +204,6 @@ a {
   width: 90%;
   display: block;
   border-radius: 50%;
-  border: 10px solid #fff;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -348,33 +347,31 @@ li {
   color: #6741d9;
 }
 
-section.my-works-section {
-  max-width: 75%;
-}
-
 .work--tabs ul {
-  margin-top: 4.8rem;
+  width: fit-content;
+  margin: 9rem auto 4.8rem;
   display: flex;
-  gap: 3.6rem;
   justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .work--tabs a {
   display: block;
   font-size: 1.8rem;
-  background-color: #fff;
   border: none;
-  color: #555;
+  color: #fff;
   transition: all 0.5s;
   cursor: pointer;
+  background-color: #6741d9;
+  padding: 0 2rem
 }
 
-.work--tabs .active {
-  color: #6741d9;
-  position: relative;
+.work--tabs .active, .work--tabs a:hover {
+  opacity: .9;
 }
 
-.work--tabs .active::after {
+/* .work--tabs .active::after {
   content: "";
   display: block;
   width: 100%;
@@ -384,7 +381,7 @@ section.my-works-section {
   bottom: 0;
   left: 0;
   animation: fadeLeftRight 0.5s cubic-bezier(0.2, 0.6, 0.2, 1);
-}
+} */
 
 .work.hidden {
   display: none;
@@ -393,7 +390,7 @@ section.my-works-section {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 9.6rem 4.8rem;
+  padding-bottom: 9.6rem;
   justify-items: center;
 }
 
@@ -448,7 +445,7 @@ div.preview {
 
 .preview--txt {
   margin-bottom: 4.8rem;
-  font-size: 3.6rem;
+  font-size: 3rem;
   color: #fff;
 }
 
@@ -467,7 +464,7 @@ div.preview {
   margin: 0 1rem;
   padding: 1rem;
 
-  border: 2px solid #6e07f3;
+  border: 2px solid #6741d9;
   border-radius: 50%;
   transition: all 0.5s;
   /* opacity: 0.5; */
@@ -538,7 +535,7 @@ div.preview {
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
-  background-color: #6e07f3;
+  background-color: #6741d9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -561,7 +558,7 @@ div.preview {
   font-family: sans-serif;
   font-size: 2.4rem;
   font-weight: 600;
-  color: #6e07f3;
+  color: #6741d9;
 }
 
 .finish--date {
