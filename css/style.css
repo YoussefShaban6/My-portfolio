@@ -219,15 +219,11 @@ a {
   margin-top: -4px;
 }
 
-.about--col {
-  padding: 0 16.75rem;
+.about {
+  margin: auto;
   width: 60%;
 }
 
-.about {
-  display: flex;
-  justify-content: center;
-}
 
 .about--content {
   margin-bottom: 9.6rem;
@@ -314,7 +310,7 @@ li {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.4rem 1.8rem;
-  border-radius:2rem;
+  border-radius: 2rem;
   border: 2px solid #6741d9;
   color: #555;
   transition: all 0.5s;
@@ -364,11 +360,12 @@ li {
   transition: all 0.5s;
   cursor: pointer;
   background-color: #6741d9;
-  padding: 0 2rem
+  padding: 0 2rem;
 }
 
-.work--tabs .active, .work--tabs a:hover {
-  opacity: .9;
+.work--tabs .active,
+.work--tabs a:hover {
+  opacity: 0.9;
 }
 
 /* .work--tabs .active::after {
@@ -524,7 +521,7 @@ div.preview {
   grid-area: 1/3;
   padding-left: 2rem;
   padding-bottom: 4rem;
- } 
+}
 
 .certificate--icon-container {
   grid-area: 1/2;
