@@ -305,20 +305,23 @@ li {
 }
 
 .resume {
+  
   margin-top: 6rem;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  padding: 1.4rem 1.8rem;
-  border-radius: 2rem;
-  border: 2px solid #6741d9;
-  color: #555;
-  transition: all 0.5s;
-}
-
-.resume:hover {
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  border: .3rem solid #6741d9;
   background-color: #6741d9;
   color: #fff;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.resume:hover{
+  background-color: #fff;
+  color: #555;
 }
 
 /* ==================My Works Section==================*/
