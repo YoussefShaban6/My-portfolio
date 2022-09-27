@@ -316,14 +316,16 @@ li {
   font-weight: 600;
   padding: 1.4rem 1.8rem;
   border-radius:2rem;
-  border: 2px solid #6741d9;
-  color: #555;
-  transition: all 0.5s;
+  background-color: #6741d9;
+  color: #fff;
+  box-shadow: 0 0 8px .5px rgba(0, 0, 0, 0.5);
+  border: .3rem solid #6741d9;
+  transition: background 0.5s;
 }
 
 .resume:hover {
-  background-color: #6741d9;
-  color: #fff;
+  background-color: #fff;
+  color: #555;
 }
 
 /* ==================My Works Section==================*/
