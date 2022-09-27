@@ -1,7 +1,4 @@
 @media (max-width: 84em) {
-  .about--col {
-    padding: 0 0;
-  }
 
   section.my-works-section {
     max-width: 100%;
@@ -250,10 +247,7 @@
   }
 
   .about--content {
-    margin-bottom: 0;
     line-height: 1.6;
-    padding: 0;
-    width: 90%;
   }
 
   .about-header {
@@ -284,10 +278,6 @@
 
   section.my-works-section {
     max-width: 90%;
-  }
-
-  .work-grid {
-    padding: 9.6rem 0;
   }
 
   .footer {

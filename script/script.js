@@ -51,8 +51,8 @@ myWorks.forEach((work, index) => {
   <div class="preview hidden">
   <p class="preview--txt">${work.name}</p>
   <div class="preview--view">
-  <a href="${work.srcCode}" class="preview-link"><img src="imgs/logos/github-brands.svg" alt="" class="preview--img"></a>
-  <a href="${work.live}" class="preview-link"><img src="imgs/logos/eye-solid.svg" alt="" class="preview--img"></a>
+  <a href="${work.srcCode}" class="preview-link" target="_blank"><img src="imgs/logos/github-brands.svg" alt="" class="preview--img"></a>
+  <a href="${work.live}" class="preview-link" target="_blank"><img src="imgs/logos/eye-solid.svg" alt="" class="preview--img"></a>
   </div>
   </div>
   </div>
@@ -124,7 +124,7 @@ const certificateHandler = (idx) => {
   for (const course of coursesList) {
     courseListEl += `<li>${
       course.link !== "#"
-        ? `<a href=${course.link}>${course.name} <span><ion-icon name="open-outline"></ion-icon></span></a>`
+        ? `<a href=${course.link} target="_blank" >${course.name} <span><ion-icon name="open-outline"></ion-icon></span></a>`
         : `<span>${course.name}</span>`
     } </li>`;
   }

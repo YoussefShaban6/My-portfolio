@@ -318,7 +318,7 @@ li {
   border-radius:2rem;
   background-color: #6741d9;
   color: #fff;
-  box-shadow: 0 0 8px .5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px .5px rgba(0, 0, 0, 0.3);
   border: .3rem solid #6741d9;
   transition: background 0.5s;
 }
