@@ -86,7 +86,7 @@ const Certificates = [
   },
   {
     name: "Academic Education",
-    date: "October, 2020 - percent",
+    date: "October, 2020 - Present",
     src: "../imgs/logos/edu.svg",
     list: [
       {

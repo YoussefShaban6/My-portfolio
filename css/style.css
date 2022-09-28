@@ -314,11 +314,11 @@ li {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.4rem 1.8rem;
-  border-radius:2rem;
+  border-radius: 2rem;
   background-color: #6741d9;
   color: #fff;
-  box-shadow: 0 0 8px .5px rgba(0, 0, 0, 0.3);
-  border: .3rem solid #6741d9;
+  box-shadow: 0 0 8px 0.5px rgba(0, 0, 0, 0.3);
+  border: 0.3rem solid #6741d9;
   transition: background 0.5s;
 }
 
@@ -517,18 +517,18 @@ div.preview {
   grid-template-columns: 1fr max-content 1fr;
   color: #444;
   line-height: 2;
+  padding-bottom: 4rem;
 }
 
 .courses--content:nth-child(odd) .course {
-  padding-left: 12rem;
-  padding-bottom: 4rem;
+  text-align: right;
+  padding-right: 2rem;
 }
 
 .courses--content:nth-child(even) .course {
   grid-area: 1/3;
   padding-left: 2rem;
-  padding-bottom: 4rem;
- } 
+}
 
 .certificate--icon-container {
   grid-area: 1/2;
@@ -569,19 +569,24 @@ div.preview {
   font-size: 1.4rem;
 }
 
-.courses--list li {
+.courses--content:nth-child(odd) .course .courses--list li {
+  margin-right: 3rem;
+}
+
+.courses--content:nth-child(even) .course .courses--list li {
   margin-left: 3rem;
-  list-style: square;
 }
 
 .courses--list a {
   margin-left: 1rem;
   color: #555;
+  padding-bottom: .2rem;
   transition: all 0.5s;
 }
 
 .courses--list a:hover {
   color: #6741d9;
+  border-bottom: 1px solid #6741d9;
 }
 
 /* ==================Chatting SECTION================== */

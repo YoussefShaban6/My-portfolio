@@ -124,7 +124,7 @@ const certificateHandler = (idx) => {
   for (const course of coursesList) {
     courseListEl += `<li>${
       course.link !== "#"
-        ? `<a href=${course.link} target="_blank" >${course.name} <span><ion-icon name="open-outline"></ion-icon></span></a>`
+        ? `<a href=${course.link} target="_blank" >${course.name}</a>`
         : `<span>${course.name}</span>`
     } </li>`;
   }
