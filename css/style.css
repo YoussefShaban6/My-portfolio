@@ -329,7 +329,7 @@ li {
 
 /* ==================My Works Section==================*/
 .work--content {
-  padding-top: 12.75rem;
+  margin-top: 12.75rem;
   text-align: center;
   line-height: 1.5;
   color: #000;
@@ -354,7 +354,7 @@ section.my-works-section {
 }
 
 .work--tabs ul {
-  margin-top: 4.8rem;
+  margin: 4.8rem;
   display: flex;
   gap: 3.6rem;
   justify-content: center;
@@ -394,7 +394,7 @@ section.my-works-section {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 9.6rem 4.8rem;
+  padding:  4.8rem;
   justify-items: center;
 }
 
@@ -484,7 +484,7 @@ div.preview {
 }
 
 .education {
-  margin: 9.6rem 0;
+  margin: 4.8rem 0;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
 }
@@ -494,7 +494,7 @@ div.preview {
 }
 
 .certificates--content {
-  padding-top: 9.6rem;
+  margin-top: 12.75rem;
   color: #000;
   text-align: center;
   line-height: 1.5;
@@ -592,7 +592,7 @@ div.preview {
 /* ==================Chatting SECTION================== */
 .quotes--section {
   border-top: 0.2rem solid #f8f9fa;
-  padding: 10rem 0 18rem;
+  padding: 12.75rem 0 18rem;
   position: relative;
   color: #000;
   font-size: 2.2rem;
