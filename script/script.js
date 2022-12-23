@@ -7,6 +7,7 @@ const heroSection = document.querySelector(".hero-section");
 const contentLabel = document.querySelectorAll(".lbl");
 const labelLinks = document.querySelectorAll(".lbl--link");
 
+
 /* ---------------------------Nav Bar--------------------------- */
 const labels = [
   { name: "Hello,", link: "About" },
@@ -45,7 +46,7 @@ worksContainer.innerHTML = "";
 
 myWorks.forEach((work, index) => {
   worksContainer.innerHTML += `
-  <div class="work" name="${work.type}">
+  <div class="work col-md-6" name="${work.type}">
   <div class="work--img-container">
   <img src="${work.src}" alt="Porject Image" class="work-img">
   <div class="preview hidden">
@@ -135,7 +136,7 @@ const certificateHandler = (idx) => {
     <div class="certificate--header">${Certificates[idx].name}</div>
       <div class="finish--date">${Certificates[idx].date}</div>
         <div class="courses--list">
-          <ul>
+          <ul class="p-0">
             ${courseListEl}
           </ul>
         </div>

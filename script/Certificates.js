@@ -2,7 +2,7 @@ const Certificates = [
   {
     name: "Programming-foundations",
     date: "April, 2022",
-    src: "../imgs/logos/binary.svg",
+    src: "imgs/logos/binary.svg",
     list: [
       {
         name: "Programming-foundations: Fundamentals",
@@ -72,7 +72,7 @@ const Certificates = [
   {
     name: "Cloud Guru",
     date: "June, 2022",
-    src: "../imgs/logos/cloud.svg",
+    src: "imgs/logos/cloud.svg",
     list: [
       {
         name: "AWS Certified Cloud Practitioner (CLF-C01)",
@@ -87,7 +87,7 @@ const Certificates = [
   {
     name: "Academic Education",
     date: "October, 2020 - Present",
-    src: "../imgs/logos/edu.svg",
+    src: "imgs/logos/edu.svg",
     list: [
       {
         name: "Discrete Mathematics Course",
