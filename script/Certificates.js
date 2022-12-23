@@ -49,7 +49,7 @@ const Certificates = [
   {
     name: "MERN Stack",
     date: "July, 2022",
-    src: "../imgs/logos/coding.png",
+    src: "imgs/logos/coding.png",
     list: [
       {
         name: "HTML & CSS",
