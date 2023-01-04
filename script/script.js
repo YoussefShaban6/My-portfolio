@@ -65,8 +65,6 @@ const works = document.querySelectorAll(".work");
 const worksImg = document.querySelectorAll(".work-img");
 const previews = document.querySelectorAll(".preview");
 
-// console.log(previews)
-
 works.forEach((work, index) => {
   work.addEventListener("mouseover", () => {
     worksImg[index].classList.add("work-img--scale");
@@ -83,7 +81,6 @@ const tabs = document.querySelectorAll(".nav-tab");
 tabs.forEach((tab) => {
   tab.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("isclicked");
     const filteredTab = document.querySelector(".active");
     filteredTab.className = filteredTab.className.replace("active", "");
 
@@ -156,10 +153,8 @@ for (let idx = 0; idx < certificatesNum; idx++) {
 }
 
 // Quotes
-
 const dots = document.querySelectorAll(".dot");
 const quotes = document.querySelectorAll(".quote");
-console.log(quotes);
 
 dots.forEach((dot) => {
   dot.addEventListener("click", () => {
